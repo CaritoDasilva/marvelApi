@@ -1,0 +1,14 @@
+<div class="container-dialog">
+    <div class="container-character" *ngFor="let charr of character; index as i ">
+        <div class="title-container">
+            <h1>{{charr.name}}</h1>
+        </div>
+        <div class="image-container">
+            <img [src]=" charr.thumbnail.path + '/portrait_uncanny.jpg'" alt="">
+        </div>
+        <div class="container-description">
+            <p>{{charr.description}}</p>
+        </div>
+        <button mat-raised-button color="primary" (click)="onNoClick()">OK</button>
+    </div>
+</div>

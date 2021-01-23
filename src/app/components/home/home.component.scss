@@ -1,0 +1,23 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+    .characters-containers {
+        margin: 2%;
+
+        .mat-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            flex-direction: column;
+            .mat-card-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
